@@ -28,13 +28,6 @@ def pullFromHeapAfterIndex(h, index):
     return res
 
 def findLargestVoltageByLength(bank: str, length: int):
-    #Remove numbers one by one until we're left with numbers that MUST be in the solution
-    # for i in range(1, 10):
-    #     if len(bank) - bank.count(str(i)) > length:
-    #         bank = bank.replace(str(i), "")
-    #     else:
-    #         break
-
     #Add to max heap sequentially so we know the K largest number before any given index 
     #By popping from the heap, we don't have to worry about duplicates
     h = []
